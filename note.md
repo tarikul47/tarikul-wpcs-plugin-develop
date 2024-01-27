@@ -1,0 +1,1 @@
+* git checkout master -b feature/coding-standards

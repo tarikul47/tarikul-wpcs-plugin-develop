@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<ruleset name="Example Project">
+	<description>A custom set of rules to check for a WPized WordPress project</description>
+
+    <!-- Include the WordPress-Extra standard. -->
+	<rule ref="WordPress">
+        <exclude name="WordPress.Files.FileName"/>
+	</rule>
+
+    <arg name="extensions" value="php"/>
+
+	<file>.</file>
+    
+    <!-- Exclude the Composer Vendor directory. -->
+	<exclude-pattern>/vendor/*</exclude-pattern>
+
+</ruleset>
